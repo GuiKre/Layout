@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox Basic</title>
+  <style>
+
+    html, body {
+      height: 90%;
+    }
+
+    .conteiner {
+      background-color: yellow;
+		  border: 1px solid black;
+      margin: 50px;
+      height: 100%;
+
+      /** propriedades flexbox */
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: stretch;
+      
+    }
+
+    .item { 
+      font-family: "Roboto";
+      border: 2px solid #194d6b;
+      background-color: #4b98f1;
+      border-radius: 5px;
+      padding: 10px;
+      width: 150px;
+    }
+
+    .dois {
+      flex: 2;
+      align-self: flex-start;
+    }
+
+    .tres {
+      flex: 1;
+      align-self: flex-end;
+    }
+    
+
+  </style>
+</head>
+<body>
+  <div class="conteiner">
+    <div class="item um">Um</div>
+    <div class="item dois">dois</div>
+    <div class="item tres">Três
+        <br>possui
+        <br>um
+        <br>texto
+        <br>extra
+    </div>
+  </div>
+</body>
+</html>
